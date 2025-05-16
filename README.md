@@ -1,17 +1,21 @@
 # 🔌 Time Series Analysis and Forecasting for Household Power Consumption
 📋 Project Overview
 This comprehensive project analyzes household power consumption data through multiple approaches: SARIMA modeling, univariate and multivariate deep learning forecasting, and consumption classification. The project implements state-of-the-art time series techniques to predict future energy consumption patterns and classify usage levels.
+
+
 🎯 Objectives
 
-Perform exploratory data analysis on household power consumption data
-Implement traditional time series forecasting with SARIMA
-Develop deep learning models (MLP, CNN, LSTM, ConvLSTM) for univariate prediction
-Extend to multivariate forecasting incorporating multiple electrical measurements
-Create a classification system for consumption levels (Low, Medium, High)
-Optimize models using Bayesian optimization (Optuna)
-Track all experiments using MLflow with DagsHub integration
+* Perform exploratory data analysis on household power consumption data
+* Implement traditional time series forecasting with SARIMA
+* Develop deep learning models (MLP, CNN, LSTM, ConvLSTM) for univariate prediction
+* Extend to multivariate forecasting incorporating multiple electrical measurements 
+* Create a classification system for consumption levels (Low, Medium, High)
+* Optimize models using Bayesian optimization (Optuna)
+* Track all experiments using MLflow with DagsHub integration
 
 📊 Dataset
+
+
 The dataset contains household power consumption measurements collected at minute-level granularity:
 
 Time Period: December 2006 - November 2010
@@ -21,15 +25,17 @@ Final Dataset Size: 1,425 days (after cleaning)
 
 Features:
 
-Global_active_power: Total active power consumed
-Global_reactive_power: Total reactive power consumed
-Voltage: Average voltage
-Global_intensity: Average current intensity
-Sub_metering_1: Kitchen energy consumption
-Sub_metering_2: Laundry room energy consumption
-Sub_metering_3: Water heater and air conditioner
+- Global_active_power: Total active power consumed
+- Global_reactive_power: Total reactive power consumed
+- Voltage: Average voltage
+- Global_intensity: Average current intensity
+- Sub_metering_1: Kitchen energy consumption
+- Sub_metering_2: Laundry room energy consumption
+- Sub_metering_3: Water heater and air conditioner
 
 🛠️ Project Structure
+
+
 ├── data/
 │   ├── raw/                    # Original minute-level data
 │   └── processed/              # Daily aggregated data
@@ -50,6 +56,8 @@ Sub_metering_3: Water heater and air conditioner
 
 
 🔬 Methodology
+
+
 1. Data Preprocessing
 
 Handled missing values (1.25% of data)
@@ -120,6 +128,8 @@ Feature Importance: Temporal features crucial for classification
 Optimization: Optuna optimization improved LSTM performance by ~4%
 
 📊 Results Visualization
+
+
 All results are automatically logged to MLflow with:
 
 Model parameters
